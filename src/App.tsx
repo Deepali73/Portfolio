@@ -150,9 +150,11 @@ function App() {
             {/* Profile Photo */}
             <div className="profile-photo-container">
               <div className="profile-photo">
-                <div className="profile-placeholder">
-                  <span className="text-2xl font-bold">DV</span>
-                </div>
+                <img 
+                  src="/photo.jpg" 
+                  alt="Deepali Verma" 
+                  className="w-full h-full object-cover rounded-full"
+                />
               </div>
             </div>
 
