@@ -121,12 +121,20 @@
   justify-content: center;
   box-shadow: 0 0 30px rgba(59, 130, 246, 0.5);
   animation: pulse 2s infinite;
+  overflow: hidden;
 }
 
 .profile-placeholder {
   color: white;
   font-size: 2rem;
   font-weight: bold;
+}
+
+.profile-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
 }
 
 @keyframes pulse {
@@ -395,4 +403,17 @@
 /* Smooth Scrolling */
 html {
   scroll-behavior: smooth;
+}
+
+.main-nav {
+  position: fixed !important;
+  top: 2rem !important;
+  right: 2rem !important;
+  z-index: 1000 !important;
+  background: rgba(30, 41, 59, 0.85);
+  border-radius: 1.5rem;
+  padding: 0.5rem 1.5rem;
+  display: flex;
+  gap: 1rem;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.15);
 }
